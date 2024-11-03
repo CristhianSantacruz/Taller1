@@ -16,7 +16,6 @@ void calcularCuboide();
 void calcularCilindro();
 void calcularCilindroRecto();
 void calcularEsfera();
-void calcularCono();
 void calcularConoCircularRecto();
 
 

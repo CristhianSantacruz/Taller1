@@ -1,19 +1,24 @@
 #include <stdio.h>
-#include "utils.h"
-int main(){
+#include <windows.h>
+#include "calculos.c"
+#include "datos.c"
+
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
     int opcion;
     int continuar; 
-    do{
+
+    do {
         opcion = solicitarFigura();
 
-        switch (opcion){
+        switch (opcion) {
             case 1:
                 printf("Elegiste triángulo:\n");
                 double base_triangulo;
                 double altura_triangulo;
-                printf("Digita la base:\n");
+                printf("Ingresa la base:\n");
                 scanf("%lf", &base_triangulo);
-                printf("Digita la altura:\n");
+                printf("Ingresa la altura:\n");
                 scanf("%lf", &altura_triangulo);
                 calcularTriangulo(base_triangulo, altura_triangulo); 
                 break;
@@ -23,11 +28,11 @@ int main(){
                 double lado1_paralelogramo;
                 double lado2_paralelogramo;
                 double altura_paralelogramo;
-                printf("Digita la base/lado1:\n");
+                printf("Ingresa la base/lado 1:\n");
                 scanf("%lf", &lado1_paralelogramo);
-                printf("Digita el lado 2:\n");
+                printf("Ingresa el lado 2:\n");
                 scanf("%lf", &lado2_paralelogramo);
-                printf("Digita la altura:\n");
+                printf("Ingresa la altura:\n");
                 scanf("%lf", &altura_paralelogramo);
                 calcularParalelogramo(lado1_paralelogramo, lado2_paralelogramo, altura_paralelogramo);
                 break;
@@ -35,7 +40,7 @@ int main(){
             case 3:
                 printf("Elegiste cuadrado:\n");
                 double lado_cuadrado;
-                printf("Digita el lado:\n");
+                printf("Ingresa el lado:\n");
                 scanf("%lf", &lado_cuadrado);
                 calcularCuadrado(lado_cuadrado);
                 break;
@@ -44,9 +49,9 @@ int main(){
                 printf("Elegiste rectángulo:\n");
                 double largo;
                 double ancho;
-                printf("Digita el largo:\n");
+                printf("Ingresa el largo:\n");
                 scanf("%lf", &largo);
-                printf("Digita el ancho:\n");
+                printf("Ingresa el ancho:\n");
                 scanf("%lf", &ancho);
                 calcularRectangulo(largo, ancho);
                 break;
@@ -55,9 +60,9 @@ int main(){
                 printf("Elegiste rombo:\n");
                 double diagonal_mayor;
                 double diagonal_menor;
-                printf("Digita la diagonal mayor:\n");
+                printf("Ingresa la diagonal mayor:\n");
                 scanf("%lf", &diagonal_mayor);
-                printf("Digita la diagonal menor:\n");
+                printf("Ingresa la diagonal menor:\n");
                 scanf("%lf", &diagonal_menor);
                 calcularRombo(diagonal_mayor, diagonal_menor);
                 break;
@@ -67,11 +72,11 @@ int main(){
                 double base_mayor;
                 double base_menor;
                 double altura_trapecio;
-                printf("Digita la base mayor:\n");
+                printf("Ingresa la base mayor:\n");
                 scanf("%lf", &base_mayor);
-                printf("Digita la base menor:\n");
+                printf("Ingresa la base menor:\n");
                 scanf("%lf", &base_menor);
-                printf("Digita la altura:\n");
+                printf("Ingresa la altura:\n");
                 scanf("%lf", &altura_trapecio);
                 calcularTrapecio(base_mayor, base_menor, altura_trapecio);
                 break;
@@ -79,7 +84,7 @@ int main(){
             case 7:
                 printf("Elegiste círculo:\n");
                 double radio;
-                printf("Digita el radio:\n");
+                printf("Ingresa el radio:\n");
                 scanf("%lf", &radio);
                 calcularCirculo(radio);
                 break;
@@ -89,11 +94,11 @@ int main(){
                 double lado_poligono;
                 double numero_lados;
                 double apotema;
-                printf("Digita el número de lados:\n");
+                printf("Ingresa el número de lados:\n");
                 scanf("%lf", &numero_lados);
-                printf("Digita la longitud de un lado:\n");
+                printf("Ingresa la longitud de un lado:\n");
                 scanf("%lf", &lado_poligono);
-                printf("Digita el apotema:\n");
+                printf("Ingresa el apotema:\n");
                 scanf("%lf", &apotema);
                 calcularPoligonoRegular(numero_lados, lado_poligono, apotema);
                 break;
@@ -101,7 +106,7 @@ int main(){
             case 9:
                 printf("Elegiste cubo:\n");
                 double lado_cubo;
-                printf("Digita el lado del cubo:\n");
+                printf("Ingresa el lado del cubo:\n");
                 scanf("%lf", &lado_cubo);
                 calcularCubo(lado_cubo);
                 break;
@@ -111,11 +116,11 @@ int main(){
                 double largo_cuboide;
                 double ancho_cuboide;
                 double alto_cuboide;
-                printf("Digita el largo:\n");
+                printf("Ingresa el largo:\n");
                 scanf("%lf", &largo_cuboide);
-                printf("Digita el ancho:\n");
+                printf("Ingresa el ancho:\n");
                 scanf("%lf", &ancho_cuboide);
-                printf("Digita el alto:\n");
+                printf("Ingresa el alto:\n");
                 scanf("%lf", &alto_cuboide);
                 calcularCuboide(largo_cuboide, ancho_cuboide, alto_cuboide);
                 break;
@@ -124,9 +129,9 @@ int main(){
                 printf("Elegiste cilindro:\n");
                 double radio_cilindro;
                 double altura_cilindro;
-                printf("Digita el radio:\n");
+                printf("Ingresa el radio:\n");
                 scanf("%lf", &radio_cilindro);
-                printf("Digita la altura:\n");
+                printf("Ingresa la altura:\n");
                 scanf("%lf", &altura_cilindro);
                 calcularCilindro(radio_cilindro, altura_cilindro);
                 break;
@@ -135,9 +140,9 @@ int main(){
                 printf("Elegiste cilindro recto:\n");
                 double radio_cilindro_recto;
                 double altura_cilindro_recto;
-                printf("Digita el radio:\n");
+                printf("Ingresa el radio:\n");
                 scanf("%lf", &radio_cilindro_recto);
-                printf("Digita la altura:\n");
+                printf("Ingresa la altura:\n");
                 scanf("%lf", &altura_cilindro_recto);
                 calcularCilindroRecto(radio_cilindro_recto, altura_cilindro_recto);
                 break;
@@ -145,7 +150,7 @@ int main(){
             case 13:
                 printf("Elegiste esfera:\n");
                 double radio_esfera;
-                printf("Digita el radio de la esfera:\n");
+                printf("Ingresa el radio de la esfera:\n");
                 scanf("%lf", &radio_esfera);
                 calcularEsfera(radio_esfera);
                 break;
@@ -154,9 +159,9 @@ int main(){
                 printf("Elegiste cono circular recto:\n");
                 double radio_cono;
                 double altura_cono;
-                printf("Digita el radio del cono:\n");
+                printf("Ingresa el radio del cono:\n");
                 scanf("%lf", &radio_cono);
-                printf("Digita la altura del cono:\n");
+                printf("Ingresa la altura del cono:\n");
                 scanf("%lf", &altura_cono);
                 calcularConoCircularRecto(radio_cono, altura_cono);
                 break;
@@ -168,6 +173,7 @@ int main(){
 
         continuar = preguntarContinuar();
 
-    }while(continuar == 1);
+    } while (continuar == 1);
+
     return 0;
 }

@@ -12,8 +12,12 @@ void calcularRombo();
 void calcularTrapecio();
 void calcularPoligono();
 void calcularCubo();
+void calcularCuboide();
 void calcularCilindro();
+void calcularCilindroRecto();
 void calcularEsfera();
 void calcularCono();
+void calcularConoCircularRecto();
+
 
 #endif

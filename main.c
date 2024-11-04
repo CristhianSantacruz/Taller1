@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "utils.h"
-
-
+#include <windows.h>
 int main()
 {
+     SetConsoleOutputCP(CP_UTF8);
     int opcion;
     int continuar;
     do

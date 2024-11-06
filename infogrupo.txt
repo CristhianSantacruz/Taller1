@@ -1,0 +1,56 @@
+Grupo #1
+
+**Integrantes:**
+Rodríguez Rivas Javier Joshua - Líder
+Santacruz Gorozabel Cristhian Maickel - Integrante
+Roldan Mendez Justyn Jael - Integrante
+
+Líder: Rodríguez Rivas Javier Joshua
+
+**Motivo de elección de líder**
+Elegido aleatoriamente. (Intercambiaremos liderato en futuros talleres)
+
+
+**Division del taller**
+
+1. Rodríguez Rivas Javier - Estructura Principal y Archivo main.c
+
+Tareas:
+Crear el archivo main.c con la lógica principal para ejecutar el programa, incluyendo:
+
+- Menú de selección de figuras geométricas.
+- Lógica de repetición (preguntar si el usuario desea realizar otro cálculo).
+- Integración y llamada a funciones en datos.c y calculos.c.
+- Trabajar en la estructura del flujo del programa.
+- Integrar las llamadas necesarias para mostrar los resultados finales.
+- Coordinar con los demás integrantes para asegurar que main.c se integre bien con los otros archivos.
+- Resultado esperado: Archivo main.c funcional, que sirva como punto de inicio del programa.
+
+
+2. Santacruz Gorozabel Cristhian - Archivo datos.c y Librería *.h
+
+Tareas:
+Crear el archivo datos.c, que contendrá funciones para solicitar información de entrada del usuario, como:
+
+- Funciones para pedir los valores necesarios para cada figura (base, altura, radio, etc.).
+- Función para mostrar los resultados al usuario.
+- Crear el archivo *.h (por ejemplo, geometria.h) que declare todas las funciones de datos.c y calculos.c.
+- Documentar claramente los parámetros y funciones en la librería *.h para que todos los integrantes puedan usarla.
+- Resultado esperado: Archivo datos.c que pueda interactuar con el usuario y obtener datos de entrada, y un archivo *.h bien documentado.
+
+
+3. Roldan Mendez Justyn - Archivo calculos.c y Makefile
+
+Tareas:
+Crear el archivo calculos.c que implemente las fórmulas para:
+
+- Área y perímetro de figuras bidimensionales (triángulo, cuadrado, etc.).
+- Superficie y volumen de figuras tridimensionales (cubo, cilindro, esfera, etc.).
+- Implementar cada fórmula como una función independiente y documentarla bien para que los otros integrantes puedan llamarla sin problemas.
+- Crear el archivo Makefile que incluya:
+- Compilación y generación de archivos .o y .s.
+- Regla para compilar el ejecutable principal.
+- Dependencias de cada archivo.
+- Asegurarse de que el Makefile funcione correctamente y de hacer pruebas de compilación.
+- Resultado esperado: Archivo calculos.c con todas las funciones matemáticas implementadas y un Makefile funcional.
+
